@@ -40,9 +40,9 @@ use App\Http\Controllers\ContactController;
 
 //Praktikum 2
 //Nomer 3
-// Route::get('/', [PageController::class, 'index']);
-// Route::get('/about', [PageController::class, 'about']);
-// Route::get('/articles/{id}', [PageController::class, 'articles']);
+Route::get('/', [PageController::class, 'index']);
+Route::get('/about', [PageController::class, 'about']);
+Route::get('/articles/{id}', [PageController::class, 'articles']);
 //nomer 5
 // Route::get('/', [HomeController::class, 'index']);
 // Route::get('/about', [AboutController::class, 'about']);
@@ -92,7 +92,12 @@ Route::prefix('/program')->group(function(){
 
 //Route Normal About Us
 Route::get('/about-us', function(){
-    echo "Ini adalah halaman <b>About Us</b>";
+    echo "
+        NIM     : 2041720130
+        <br>
+        Nama    : Bintang Adiyatma Agung Putra
+        <br>
+        Kelas   : TI-2G";
 });
 
 //Route Resource Contact
