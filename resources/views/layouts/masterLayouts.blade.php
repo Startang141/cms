@@ -65,23 +65,22 @@
 						    	<li><a href="#">Events</a></li>
 						    	<li><a href="{{route('experience')}}">Experiance</a></li>
 						    	<li><a href="#">Company</a></li>
-								<li><a href="{{route('contact')}}">Contact</a></li>							
+								<li><a href="{{route('contact')}}">Contact</a></li>						
 								<div class="clear"></div>
-								<!-- Authentication Links -->
 								@guest
-                            @if (Route::has('login'))
+                            	@if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
-                            @endif
+                            	@endif
 
-                            @if (Route::has('register'))
+                            	@if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
+                            	@endif
+                        		@else
+                            	<li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
@@ -98,7 +97,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        	@endguest
 							</ul>
 							<script type="text/javascript" src="{{url('assets/js/responsive-nav.js')}}"></script>
 				    </div>							

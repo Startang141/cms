@@ -126,9 +126,9 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/check-out', function(){
     return view('checkout');
 });
-Route::get('/login', function(){
-    return view('login');
-});
+// Route::get('/login', function(){
+//     return view('login');
+// });
 //
 Auth::routes();
 
