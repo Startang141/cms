@@ -60,7 +60,7 @@
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="{{url('assets/images/nav.png')}}" alt="" /></a>
 						    <ul class="nav" id="nav">
-						    	<li><a href="{{route('shop')}}">Shop</a></li>
+						    	<li><a href="#">Shop</a></li>
 						    	<li><a href="{{route('team')}}">Team</a></li>
 						    	<li><a href="#">Events</a></li>
 						    	<li><a href="{{route('experience')}}">Experiance</a></li>

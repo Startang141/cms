@@ -119,7 +119,7 @@ use App\Http\Controllers\ShopController;
 Route::get('/', function(){
     return view('index');
 });
-Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+Route::get('/shop', [ShopController::class, 'index']);
 Route::get('/team', [TeamController::class, 'index'])->name('team');
 Route::get('/experience', [ExperienceController::class, 'index'])->name('experience');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
@@ -129,3 +129,4 @@ Route::get('/check-out', function(){
 Route::get('/login', function(){
     return view('login');
 });
+//

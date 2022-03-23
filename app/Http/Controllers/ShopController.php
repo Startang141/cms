@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ShopController extends Controller
 {
     public function index()
     {
-        return view('shop');
+        return view('shop',['Products'=>Product::index()]);
     }
 
 }
