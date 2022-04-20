@@ -117,22 +117,24 @@ use App\Http\Controllers\ArticleController;
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Pertemuan 3
-Route::get('/', function(){
-    return view('index');
-});
-Route::get('/shop', [ShopController::class, 'index']);
-Route::get('/team', [TeamController::class, 'index'])->name('team');
-Route::get('/experience', [ExperienceController::class, 'index'])->name('experience');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::get('/check-out', function(){
-    return view('checkout');
-});
+// Route::get('/', function(){
+//     return view('index');
+// });
+// Route::get('/shop', [ShopController::class, 'index']);
+// Route::get('/team', [TeamController::class, 'index'])->name('team');
+// Route::get('/experience', [ExperienceController::class, 'index'])->name('experience');
+// Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+// Route::get('/check-out', function(){
+//     return view('checkout');
+// });
 // Route::get('/login', function(){
 //     return view('login');
 // });
 //
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('articles', ArticleController::class);
+
+Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf'])->name('cetak_pdf');
